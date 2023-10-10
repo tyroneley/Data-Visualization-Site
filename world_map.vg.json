@@ -42,8 +42,7 @@
             "encoding": {
                 "color": {
                     "field": "Life expectancy in age",
-                    "type": "quantitative",
-                    "title": "Life expectancy in age"
+                    "type": "quantitative"
                 },
                 "tooltip": [
                     {
