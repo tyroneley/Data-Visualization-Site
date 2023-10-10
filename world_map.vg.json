@@ -7,7 +7,7 @@
         "type": "equalEarth"
     },
     "data": {
-      "url": "data/Life_Expectancy_Data.cv",
+      "url": "/Life_Expectancy_Data.cv",
       "format": {
         "type": "csv"
         }
@@ -15,7 +15,7 @@
     "layer": [
         {
             "data": {
-                "url": "data/ne_10m_ocean.json",
+                "url": "/ne_10m_ocean.json",
                 "format": {
                     "type": "topojson",
                     "feature": "ne_10m_ocean"
@@ -28,7 +28,7 @@
         },
         {
             "data": {
-                "url": "data/ne_10m_admin_0_countries.json",
+                "url": "/ne_10m_admin_0_countries.json",
                 "format": {
                     "type": "topojson",
                     "feature": "ne_10m_admin_0_countries"
