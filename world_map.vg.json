@@ -43,16 +43,7 @@
                 "color": {
                     "field": "Life expectancy in age",
                     "type": "quantitative",
-                    "title": "Life expectancy in age",
-                    "scale": {
-                        "type": "threshold",
-                        "domain": [
-                            1000,
-                            2000,
-                            3000,
-                            4000
-                        ]
-                    }
+                    "title": "Life expectancy in age"
                 },
                 "tooltip": [
                     {
