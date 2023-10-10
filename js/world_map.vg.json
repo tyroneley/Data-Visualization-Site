@@ -9,8 +9,7 @@
     "data": {
       "url": "data/Life_Expectancy_Data.cv",
       "format": {
-        "type": "topojson", 
-        "feature": "countries"
+        "type": "csv"
         }
     },
     "layer": [
