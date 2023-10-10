@@ -35,15 +35,13 @@
               </div>
             </div>
 
-            <div id="world_map">
-              <script type="text/javascript">
-                var worldMap = "js/world_map.vg.json"
-                vegaEmbed('world_map', worldMap).then(function(result) {
-                  // Access
-                }).catch(console.error);
-              </script>
-            </div>
-            
+            <div id="world_map"></div>
+            <script type="text/javascript">
+              var worldMap = "js/world_map.vg.json"
+              vegaEmbed('world_map', worldMap).then(function(result) {
+                // Access
+              }).catch(console.error);
+            </script>
           </div>
         </section>
         <script src="js/bootstrap.bundle.min.js"></script>
