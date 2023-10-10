@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
+
+        <style media="screen">
+          /* Add space between Vega-Embed links  */
+          .vega-actions a {
+            margin-right: 5px;
+          }
+        </style>
+        <title>Vegalite Website</title> 
+    </head>
+    <body>
+        <section id="main">
+          <div class="main_box">
+            <div class="container-lg">
+              <div class="row justify-content-center">
+                <div class="co-md-5 text-center text-md-start">
+                  <h2 class="text-primary text-center">
+                    Life Expectancy (WHO)
+                  </h1>
+
+                  <h3 class="text-secondary text-center">
+                    Statistical Analysis on factors influencing Life Expectancy
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div id="world_map">
+              <script type="text/javascript">
+                var worldMap = "js/world_map.vg.json"
+                vegaEmbed('world_map', worldMap).then(function(result) {
+                  // Access
+                }).catch(console.error);
+              </script>
+            </div>
+            
+          </div>
+        </section>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
