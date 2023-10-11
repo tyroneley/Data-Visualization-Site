@@ -51,10 +51,7 @@
                     "type": "quantitative",
                     "title": "Life expectancy in years",
                     "scale": {
-                        "type": "threshold",
-                        "range": [
-                            1, 100
-                        ]
+                        "type": "log"
                     }
                 },
                 "tooltip": [
