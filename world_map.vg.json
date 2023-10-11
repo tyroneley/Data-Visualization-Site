@@ -52,7 +52,7 @@
                     "title": "Life expectancy in years",
                     "scale": {
                         "type": "threshold",
-                        "domain": [
+                        "range": [
                             1, 100
                         ]
                     }
