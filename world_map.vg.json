@@ -13,7 +13,10 @@
         "lookup": "properties.NAME",
         "from": {
           "data": {
-            "url": "Life_Expectancy_Data.csv"
+            "url": "Life_Expectancy_Data.csv",
+            "format": {
+                "type": "csv"
+            }
           },
           "key": "Country",
           "fields": ["Life expectancy"]
