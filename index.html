@@ -43,8 +43,8 @@
           </p>
         </div>
 
-        <div class="container-lg">
-          <div class="d-flex align-items-center justify-content-center" id="map"></div>
+        <div class="wrapper">
+          <div class="d-flex" id="map"></div>
           <script type="text/javascript">
             var worldMap = "world_map.vg.json";
             vegaEmbed('#map', worldMap).then(function(result) {
@@ -84,13 +84,27 @@
 
         <br><br>
 
-        <div class="d-flex align-items-center justify-content-center" id="line_graph"></div>
-        <script type="text/javascript">
-          var lineGraph = "line_graph.vg.json";
-          vegaEmbed('#line_graph', lineGraph).then(function(result) {
-            // Access
-          }).catch(console.error);
-        </script>
+        <div class="container-lg">
+          <table class="table-responsive">
+            <tr>
+              <td>
+                <p>
+                  Text here
+                </p>
+              </td>
+              <td>
+                <div class="d-flex" id="line_graph"></div>
+              </td>
+            </tr>
+          </table>
+
+          <script type="text/javascript">
+            var lineGraph = "line_graph.vg.json";
+            vegaEmbed('#line_graph', lineGraph).then(function(result) {
+              // Access
+            }).catch(console.error);
+          </script>
+        </div>
 
         <br><br>
         

@@ -14,6 +14,12 @@ body {
     background-size: cover;
     background-attachment: scroll;
     scroll-behavior: smooth;
+    min-width: 1150px;
+}
+
+.wrapper {
+    width: min(300px, 100% - 3rem);
+    margin-inline: auto;
 }
 
 .main_box {
