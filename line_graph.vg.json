@@ -3,7 +3,7 @@
     "height": 300,
     "title": "Government Expenditure on Health as part of Total Expenditure in South-East Asian Countries",
     "data": {
-      "url": "https://raw.githubusercontent.com/tyroneley/Vegalite-Site/main/Life_Expectancy_Data.csv"
+      "url": "https://raw.githubusercontent.com/tyroneley/Data-Visualization-Site/main/Life_Expectancy_Data.csv"
     },
     "transform": [
       {"filter": "datum.Country == ['Indonesia'] || datum.Country == ['Singapore'] || datum.Country == ['Malaysia'] || datum.Country == ['Philippines'] || datum.Country == ['Thailand'] || datum.Country == ['Cambodia'] || datum.Country == ['Timor-Leste'] || datum.Country == ['Brunei Darussalam'] || datum.Country == ['Myanmar']"},

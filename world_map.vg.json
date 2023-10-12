@@ -7,7 +7,7 @@
     "layer": [
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/tyroneley/Vegalite-Site/main/ne_110m_admin_0_countries.json",
+          "url": "https://raw.githubusercontent.com/tyroneley/Data-Visualization-Site/main/ne_110m_admin_0_countries.json",
           "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
         },
         "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
@@ -16,7 +16,7 @@
             "lookup": "properties.NAME",
             "from": {
               "data": {
-                "url": "https://raw.githubusercontent.com/tyroneley/Vegalite-Site/main/Life_Expectancy_Data.csv",
+                "url": "https://raw.githubusercontent.com/tyroneley/Data-Visualization-Site/main/Life_Expectancy_Data.csv",
                 "format": {"type": "csv"}
               },
               "key": "Country",
