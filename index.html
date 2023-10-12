@@ -28,19 +28,34 @@
               </h2>
 
               <h3 class="text-secondary text-center">
-                Statistical Analysis on factors influencing Life Expectancy
+                Statistical Analysis on Factors Influencing Life Expectancy
               </h3>
             </div>
           </div>
         </div>
 
-        <div class="d-flex align-items-center justify-content-center" id="map"></div>
-        <script type="text/javascript">
-          var worldMap = "world_map.vg.json";
-          vegaEmbed('#map', worldMap).then(function(result) {
-            // Access
-          }).catch(console.error);
-        </script>
+        <div class="container-lg">
+          <p>
+            Due to the advancement of technology and medicine, the global life expectancy has increased by more than 6 years
+            between 2000 and 2015. However, there are also other factors related to the increase in life expectancy that vary
+            between different countries. Many of these factors are related to the economic status of a country, while
+            some of the other factors are related to government funding towards healthcare and the state of public health.
+          </p>
+        </div>
+
+        <div class="container-lg">
+          <div class="d-flex align-items-center justify-content-center" id="map"></div>
+          <script type="text/javascript">
+            var worldMap = "world_map.vg.json";
+            vegaEmbed('#map', worldMap).then(function(result) {
+              // Access
+            }).catch(console.error);
+          </script>
+          <br>
+          The world average life expectancy in 1950 was 48 years, compared to the current world average
+          of 71.8 years in 2015. As shown in the map, most countries have an average life expectancy of
+          60+ years.
+        </div>
 
         <br><br>
 
