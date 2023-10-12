@@ -5,30 +5,8 @@
     "data": {
       "url": "https://raw.githubusercontent.com/tyroneley/Vegalite-Site/main/Life_Expectancy_Data.csv"
     },
-    "params": [
-      {
-        "name": "country_name1",
-        "value": ["Indonesia"]
-      },
-      {
-        "name": "country_name2",
-        "value": ["Singapore"]
-      },
-      {
-        "name": "country_name3",
-        "value": ["Malaysia"]
-      },
-      {
-        "name": "country_name4",
-        "value": ["Philippines"]
-      },
-      {
-        "name": "country_name5",
-        "value": ["Thailand"]
-      }
-    ],
     "transform": [
-      {"filter": "datum.Country == country_name1 || datum.Country == country_name2 || datum.Country == country_name3 || datum.Country == country_name4 || datum.Country == country_name5"},
+      {"filter": "datum.Country == ['Indonesia'] || datum.Country == ['Singapore'] || datum.Country == ['Malaysia'] || datum.Country == ['Philippines'] || datum.Country == ['Thailand'] || datum.Country == ['Cambodia'] || datum.Country == ['Timor-Leste'] || datum.Country == ['Brunei Darussalam'] || datum.Country == ['Myanmar']"},
       {"filter": "datum['Total expenditure'] != 0"}
     ],
     "encoding": {

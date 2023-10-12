@@ -1,0 +1,67 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/tyroneley/Vegalite-Site/main/Life_Expectancy_Data.csv"
+    },
+    "params": [{"name": "hover", "select": {"type": "point", "on": "mouseover"}}],
+    "vconcat": [
+      {
+        "title": "Adult Mortality Rates of South-East Asian Countries",
+        "height": {"step": 20},
+        "width": 420,
+        "transform": [
+          {"filter": "datum.Country == ['Indonesia'] || datum.Country == ['Singapore'] || datum.Country == ['Malaysia'] || datum.Country == ['Philippines'] || datum.Country == ['Thailand'] || datum.Country == ['Cambodia'] || datum.Country == ['Timor-Leste'] || datum.Country == ['Brunei Darussalam'] || datum.Country == ['Myanmar']"}
+          ],
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "Country",
+            "type": "nominal",
+            "sort": {"field": "Rank", "op": "sum"},
+            "title": "Selected Countries"
+          },
+          "x": {
+            "aggregate": "sum",
+            "field": "Adult Mortality",
+            "title": "Mortality Rate (between 15 and 60 years per 1000 population)",
+            "scale": {"domain": [0, 1000]},
+            "axis": {"tickCount": 6}
+          },
+          "tooltip": [
+            {"field": "Country", "type": "nominal"},
+            {"field": "Adult Mortality", "type": "quantitative", "title": "Adult Mortality Rate"}
+          ],
+          "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.4}
+        }
+      },
+      {
+        "title": "Adult Mortality Rates of European Countries",
+        "height": {"step": 20},
+        "width": 420,
+        "transform": [
+          {"filter": "datum.Country == ['Germany'] || datum.Country == ['Portugal'] || datum.Country == ['France'] || datum.Country == ['Spain'] || datum.Country == ['Russia'] || datum.Country == ['Belgium'] || datum.Country == ['Italy'] || datum.Country == ['Poland'] || datum.Country == ['Sweden'] || datum.Country == ['Switzerland']"}
+          ],
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "Country",
+            "type": "nominal",
+            "sort": {"field": "Rank", "op": "sum"},
+            "title": "Selected Countries"
+          },
+          "x": {
+            "aggregate": "sum",
+            "field": "Adult Mortality",
+            "title": "Mortality Rate (between 15 and 60 years per 1000 population)",
+            "scale": {"domain": [0, 1000]},
+            "axis": {"tickCount": 6}
+          },
+          "tooltip": [
+            {"field": "Country", "type": "nominal"},
+            {"field": "Adult Mortality", "type": "quantitative", "title": "Adult Mortality Rate"}
+          ],
+          "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.4}
+        }
+      }
+    ]
+  }
