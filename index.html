@@ -20,45 +20,51 @@
     </head>
     <body>
         <section id="main">
-          <div class="main_box">
-            <div class="container-lg">
-              <div class="row justify-content-center">
-                <div class="co-md-5 text-center text-md-start">
-                  <h2 class="text-primary text-center">
-                    Life Expectancy (WHO)
-                  </h1>
-
-                  <h3 class="text-secondary text-center">
-                    Statistical Analysis on factors influencing Life Expectancy (UPDATE MARK 3A)
-                  </h2>
+          <div class="content">
+            <div class="main_box">
+              <div class="container-lg">
+                <div class="row justify-content-center">
+                  <div class="co-md-5 text-center text-md-start">
+                    <h2 class="text-primary text-center">
+                      Life Expectancy (WHO)
+                    </h1>
+  
+                    <h3 class="text-secondary text-center">
+                      Statistical Analysis on factors influencing Life Expectancy (UPDATE MARK 3A)
+                    </h2>
+                  </div>
                 </div>
               </div>
+  
+              <div class="row justify-content-center" id="map"></div>
+              <script type="text/javascript">
+                var worldMap = "world_map.vg.json";
+                vegaEmbed('#map', worldMap).then(function(result) {
+                  // Access
+                }).catch(console.error);
+              </script>
+  
+              <br><br>
+  
+              <div class="row justify-content-center" id="bubble_plot"></div>
+              <script type="text/javascript">
+                var bubblePlot = "bubble_plot.vg.json";
+                vegaEmbed('#bubble_plot', bubblePlot).then(function(result) {
+                  // Access
+                }).catch(console.error);
+              </script>
+  
+              <br><br>
+  
+              <div class="row justify-content-center" id="line_graph"></div>
+              <script type="text/javascript">
+                var lineGraph = "line_graph.vg.json";
+                vegaEmbed('#line_graph', lineGraph).then(function(result) {
+                  // Access
+                }).catch(console.error);
+              </script>
+  
             </div>
-
-            <div class="row justify-content-center" id="map"></div>
-            <script type="text/javascript">
-              var worldMap = "world_map.vg.json";
-              vegaEmbed('#map', worldMap).then(function(result) {
-                // Access
-              }).catch(console.error);
-            </script>
-
-            <div class="row justify-content-center" id="bubble_plot"></div>
-            <script type="text/javascript">
-              var bubblePlot = "bubble_plot.vg.json";
-              vegaEmbed('#bubble_plot', bubblePlot).then(function(result) {
-                // Access
-              }).catch(console.error);
-            </script>
-
-            <div class="row justify-content-center" id="line_graph"></div>
-            <script type="text/javascript">
-              var lineGraph = "line_graph.vg.json";
-              vegaEmbed('#line_graph', lineGraph).then(function(result) {
-                // Access
-              }).catch(console.error);
-            </script>
-
           </div>
         </section>
         <script src="js/bootstrap.bundle.min.js"></script>
