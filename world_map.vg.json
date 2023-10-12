@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Average Life Expectancy Of Countries Around The World (WHO)",
+    "title": "Average Life Expectancy Of Countries Around The World (WHO, 2015)",
     "width": 500,
     "height": 300,
     "projection": {"type": "equalEarth"},
@@ -38,4 +38,4 @@
         }
       }
     ]
-  }
+}
