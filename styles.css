@@ -17,13 +17,8 @@ body {
     min-width: 1150px;
 }
 
-.wrapper {
-    width: min(300px, 100% - 3rem);
-    margin-inline: auto;
-}
-
 .main_box {
-    width: 50%;
+    width: 1000px;
     background-color: rgb(255, 255, 255);
     margin: auto;
     padding: 15px;
