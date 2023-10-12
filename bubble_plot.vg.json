@@ -32,10 +32,10 @@
         "title": "Income composition of resources (human development index from 0-1)"
       },
       "y": {
-        "field": "GDP",
+        "field": "Life expectancy",
         "type": "quantitative",
-        "scale": {"type": "log"},
-        "title": "GDP (in USD)"
+        "scale": {"domain": [35, 90]},
+        "title": "Life expectancy (years)"
       }
     },
     "layer": [
@@ -66,9 +66,9 @@
         "mark": "point",
         "encoding": {
           "size": {
-            "field": "Life expectancy",
+            "field": "GDP",
             "type": "quantitative",
-            "title": "Life expectancy (years)"
+            "title": "GDP (in USD)"
           },
           "color": {"value": "green"},
           "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.1},
