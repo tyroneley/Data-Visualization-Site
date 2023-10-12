@@ -4,7 +4,7 @@
     "width": 325,
     "height": 550,
     "data": {
-      "url": "https://raw.githubusercontent.com/tyroneley/Data-Visualization-Site/main/Life_Expectancy_Data.csv"
+      "url": "https://raw.githubusercontent.com/tyroneley/Data-Visualization-Site/main/data/Life_Expectancy_Data.csv"
     },
     "params": [
       {

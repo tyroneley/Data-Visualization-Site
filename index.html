@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
 
         <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
         <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.0"></script>
@@ -46,7 +46,7 @@
         <div class="container-lg">
           <div class="d-flex align-items-center justify-content-center" id="map"></div>
           <script type="text/javascript">
-            var worldMap = "world_map.vg.json";
+            var worldMap = "data/world_map.vg.json";
             vegaEmbed('#map', worldMap).then(function(result) {
               // Access
             }).catch(console.error);
@@ -78,7 +78,7 @@
           </table>
 
         <script type="text/javascript">
-          var bubblePlot = "bubble_plot.vg.json";
+          var bubblePlot = "data/bubble_plot.vg.json";
           vegaEmbed('#bubble_plot', bubblePlot).then(function(result) {
             // Access
           }).catch(console.error);
@@ -106,7 +106,7 @@
           </table>
 
           <script type="text/javascript">
-            var lineGraph = "line_graph.vg.json";
+            var lineGraph = "data/line_graph.vg.json";
             vegaEmbed('#line_graph', lineGraph).then(function(result) {
               // Access
             }).catch(console.error);
@@ -128,7 +128,7 @@
           </p>
 
           <script type="text/javascript">
-          var barGraph = "bar_graph.vg.json";
+          var barGraph = "data/bar_graph.vg.json";
           vegaEmbed('#bar_graph', barGraph).then(function(result) {
             // Access
           }).catch(console.error);
