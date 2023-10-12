@@ -1,0 +1,64 @@
+{
+    "width": 470,
+    "height": 300,
+    "title": "Government Expenditure on Health as part of Total Expenditure in South-East Asian Countries",
+    "data": {
+      "url": "https://raw.githubusercontent.com/tyroneley/Vegalite-Site/main/Life_Expectancy_Data.csv"
+    },
+    "params": [
+      {
+        "name": "country_name1",
+        "value": ["Indonesia"]
+      },
+      {
+        "name": "country_name2",
+        "value": ["Singapore"]
+      },
+      {
+        "name": "country_name3",
+        "value": ["Malaysia"]
+      },
+      {
+        "name": "country_name4",
+        "value": ["Philippines"]
+      },
+      {
+        "name": "country_name5",
+        "value": ["Thailand"]
+      }
+    ],
+    "transform": [
+      {"filter": "datum.Country == country_name1 || datum.Country == country_name2 || datum.Country == country_name3 || datum.Country == country_name4 || datum.Country == country_name5"},
+      {"filter": "datum['Total expenditure'] != 0"}
+    ],
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal"},
+      "y": {"field": "Total expenditure", "type": "quantitative", "title": "Government expenditure on health (%)"}
+    },
+    "layer": [
+      {
+        "mark": "line",
+        "params": [
+          {"name": "hover", "select": {"type": "point", "on": "mouseover"}}
+        ],
+        "encoding": {
+          "color": {"field": "Country", "type": "nominal"},
+          "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.3},
+          "tooltip": [{"field": "Country", "type": "nominal"}]
+        }
+      },
+      {
+        "mark": "circle",
+        "encoding": {
+          "color": {"field": "Country", "type": "nominal"},
+          "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.3},
+          "tooltip": [
+            {"field": "Country", "type": "nominal"},
+            {"field": "Year", "type": "temporal"},
+            {"field": "Population", "type": "quantitative"},
+            {"field": "Life expectancy", "type": "quantitative"}
+          ]
+        }
+      }
+    ]
+  }

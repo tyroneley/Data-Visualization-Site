@@ -51,6 +51,14 @@
               }).catch(console.error);
             </script>
 
+            <div class="row justify-content-center" id="line_graph"></div>
+            <script type="text/javascript">
+              var lineGraph = "line_graph.vg.json";
+              vegaEmbed('#line_graph', lineGraph).then(function(result) {
+                // Access
+              }).catch(console.error);
+            </script>
+
           </div>
         </section>
         <script src="js/bootstrap.bundle.min.js"></script>
