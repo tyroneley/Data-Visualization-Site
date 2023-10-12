@@ -18,6 +18,11 @@ body {
     margin: 0 auto;
 }
 
+.table_text {
+    position: relative;
+    top: 10px;
+}
+
 .main_box {
     width: 1000px;
     background-color: rgb(255, 255, 255);
